@@ -39,9 +39,9 @@ class BookList extends Component {
             />
           </InputGroup>
           <Row>
-            {filteredBooks.map((book, index) => (
-              <Col>
-                <SingleBook key={index} book={book} />
+            {filteredBooks.map((book) => (
+              <Col key={book.asin}>
+                <SingleBook  book={book} />
               </Col>
             ))}
           </Row>
